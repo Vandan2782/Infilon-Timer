@@ -8,14 +8,15 @@ import Link from "next/link";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  
+  const [isCard2Visible, setIsCard2Visible] = useState(false); // State for .card2 opacity
 
   const toggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
   };
 
-
+  const toggleCard2Visibility = () => {
+    setIsCard2Visible(!isCard2Visible);
+  };
 
   return (
     <>
@@ -28,10 +29,7 @@ const Sidebar = () => {
             height={50}
             alt="Logo"
           />
-          <span
-            className="arrow-left ms-1 fa-lg"
-            onClick={toggleSidebar}
-          >
+          <span className="arrow-left ms-1 fa-lg" onClick={toggleSidebar}>
             <i className="fa-solid fa-arrow-left"></i>
           </span>
         </div>
@@ -74,49 +72,46 @@ const Sidebar = () => {
           </ul>
 
           {/* Accordation */}
-         
-         <div className="card">
-          <div className="image-section">
-             <Image src="/Images/bg-blue.svg" width={70} height={70}/>
-          </div>
+          <div className="card">
+            <div className="image-section">
+              <Image src="/Images/bg-blue.svg" width={70} height={70} />
+            </div>
 
-          <div className="profile-image">
-            <Image src="/Images/Profile-img.svg" width={25} height={25}/>
-          </div>
+            <div className="profile-image">
+              <Image src="/Images/Profile-img.svg" width={25} height={25} />
+            </div>
 
-          <div className="ems">
-            EMS Infilon
-          </div>
+            <div className="ems">EMS Infilon</div>
 
-          <div className="lower-name">
-            Vandan Patel
-          </div>
+            <div className="lower-name">Vandan Patel</div>
 
-          <div className="angle" >
-          <i class="fa-solid fa-angle-right"></i>
-          </div>
-         </div>
+            <div className="angle" onClick={toggleCard2Visibility}>
+              <i
+                className={`fa-solid fa-angle-right ${
+                  isCard2Visible ? "rotated" : ""
+                }`}
+              ></i>
+            </div>
 
+            <div className={`card2 ${isCard2Visible ? "visible" : "hidden"}`}>
+              Hii
+            </div>
+          </div>
         </div>
 
         <span
           className={`toggle-bars fa-lg ${isCollapsed ? "" : "hidden"}`}
           onClick={toggleSidebar}
-        > 
-        <Image src="/Images/logo.png" width={60} height={15}/> <i className="fa-solid fa-bars"></i>
-         
+        >
+          <Image src="/Images/logo.png" width={60} height={15} />
+          <i className="fa-solid fa-bars"></i>
         </span>
-      
-
       </div>
 
       <div className={`main-content ${isCollapsed ? "expanded" : ""}`}>
-        {/* Your main content goes here 
-       <h1>Main Content</h1> */}
+        {/* Your main content goes here */}
+        {/* <h1>Main Content</h1> */}
       </div>
-
-   
-   
     </>
   );
 };

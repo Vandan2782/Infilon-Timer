@@ -1,7 +1,7 @@
 .nav-side {
   /* padding: 17px; */
   background-color: #ffffff;
-  height: 100vh;
+  height: 100%;
   width: 300px;
   /* border: 1px solid black; */
   position: fixed;
@@ -55,6 +55,10 @@
   height: 100%;
   width: 300px;
   transition: opacity 0.3s ease; 
+}
+
+.sidebar::-webkit-scrollbar{
+  display: none;
 }
 
 .nav-side.collapsed .sidebar {
@@ -129,4 +133,32 @@
   top: 1.5rem;
   left: 16rem;
   cursor: pointer;
+}
+
+
+.card2 {
+  position: absolute;
+  top: -11.5rem;
+  height: 182px;
+  width: 100%;
+  background: aqua;
+  opacity: 1;
+}
+
+.card2 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card2.hidden {
+  opacity: 0;
+}
+
+
+.angle .fa-angle-right {
+  transition: transform 0.3s ease-in-out;
+}
+
+.angle .fa-angle-right.rotated {
+  transform: rotate(-90deg);
 }
