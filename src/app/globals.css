@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  /* background-color: aqua; */
+}
+
+.col-md-8 {
+  background: url("/Images/office-img.jpg") no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.hexagon-wrapper {
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon-wrapper img {
+  margin-left: 32px;
+}
+
+#hex3 {
+  position: absolute;
+  top: -50px;
+  right: -18px;
+  z-index: 1;
+  width: 120px;
+  height: 130px;
+  opacity: 0.5;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.inner-wrapper {
+  width: 100%;
+}
+
+.logo-section {
+  position: relative;
+  z-index: 9;
+  text-align: center;
+  margin-top: 10rem;
+  vertical-align: middle;
+}
+
+.form {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 23rem !important;
+  height: 45px;
+}
+
+.login-btn {
+  height: 40px;
+  width: 93.05px;
+  /* margin-left: 120px; */
+  border-radius: 5px;
+  border: none;
+  background-color: #21376d;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #6d6e71;
+  color: white;
+}
+
+.line {
+  color: #555550;
+}
+
+
+
+/* Media Screen */
+
+@media (max-width: 768px) {
+  .col-md-8 {
+    display: none;
+  }
+
+  .logo-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 2rem;
+    margin-top: 7rem;
+  }
+
+  .form-control {
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+  }
+
+  .login-btn {
+    margin-left: 1.5rem;
+  }
+}

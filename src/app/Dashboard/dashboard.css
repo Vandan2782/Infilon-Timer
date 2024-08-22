@@ -1,0 +1,167 @@
+.dashboard-section {
+  display: flex;
+  width: 100%;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  position:fixed;
+  top: 0;
+  right: 0;
+}
+
+.dashboard-corner-img {
+  color: transparent;
+  top: -29px;
+  position: absolute;
+  right: 2px;
+}
+
+.row {
+  position: relative;
+  top: 61px;
+  /* background: aqua; */
+  height: 45px;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#header-id {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dashboard-header {
+  /* font-size: 25px; */
+  /* margin-left: 0rem; */
+  font-weight: 600;
+  color: #70706b;
+}
+
+.dashboard-header .name {
+  color: #21376d;
+}
+
+.grid1 {
+  position: relative;
+  top: 5rem;
+  height: 50px;
+  /* background: red; */
+  background-color: #f9fafb;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.timer {
+  padding: 12px;
+  border-left: 4px solid #21376d;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.image-timer-corner {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+.summernote {
+  /* border: 1px solid black; */
+  height: 40px;
+  /* background: aqua; */
+  background-color: #ffffff;
+}
+
+.summernote .project {
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+select.w-100 {
+  border: 1px solid #e5e5e5;
+  height: 45px;
+}
+
+/* React Quill */
+.react-quill {
+  height: 40vh;
+}
+
+.btn {
+  position: relative;
+  top: 1rem;
+}
+
+.btn button {
+  height: 40px;
+  width: 115.45px;
+  border: none;
+  border-radius: 5px;
+  background-color: #21376d;
+  color: white;
+  margin-left: -1rem;
+}
+
+.btn button:hover {
+  background-color: #70706b;
+  color: white;
+}
+
+.today-work {
+  background-color: #f9fafb;
+  position: relative;
+  top: 40rem;
+  padding: 8px;
+  border-left: 4px solid #21376d;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.image-today-work {
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+.task {
+  background-color: #eff1f5;
+  padding: 10px;
+  border-radius: 15px 0;
+  box-shadow: 3px 3px 11px -7px #333;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 15px;
+}
+
+.trainning {
+  color: #21376d;
+  /* background: aqua; */
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 25px;
+  font-size: 16px;
+}
+
+.footer-section {
+  position: relative;
+  top: 5rem;
+  height: 60px;
+  /* background-color: #21376d; */
+  color: #70706b;
+}
+
+.bottom-corner-img {
+  position: relative;
+  right: 0;
+  opacity: 0.7;
+}
+
+.bt-img {
+  position: fixed;
+  top: 50rem;
+  right: 0;
+}
