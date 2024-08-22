@@ -55,6 +55,7 @@
   height: 100%;
   width: 300px;
   transition: opacity 0.3s ease; 
+  font-weight: 600;
 }
 
 .sidebar::-webkit-scrollbar{
