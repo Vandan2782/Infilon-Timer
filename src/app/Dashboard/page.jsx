@@ -18,7 +18,7 @@ const page = () => {
     <div className='d-flex'>
    
 
-      <Sidebar />
+      <Sidebar/>
 
       {/* </div> */}
      
