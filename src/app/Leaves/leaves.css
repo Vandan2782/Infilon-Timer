@@ -57,7 +57,7 @@ input.search-input {
     background:#F9FAFB;
     position: relative;
     top: 5rem;
-    padding: 10px;
+    /* padding: 10px; */
     border-left: 5px solid #21376D;
     font-size: 16px;
     font-weight: 600;
@@ -74,17 +74,21 @@ input.search-input {
 
 .paragraph{
     position: relative;
-    height: 60px;
+    height:35rem;
     /* background-color: aqua; */
-    top: 16px;
+    background-color: white;
+    /* border: 1px solid black; */
+    top:-45px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.add-btn{
+.modal-btn1{
     position: absolute;
     margin-top: 15px;
-}
+} 
 
-.add-btn button{
+.modal-btn1 button{
     width: 82.14px;
     height: 35px;
     border: none;
@@ -92,6 +96,11 @@ input.search-input {
     background-color: #21376D;
     color: white;
 }
+
+.modal-btn1 button:hover{
+    background-color: #6d6e71;
+    color: white;
+} 
 
 .input{
     position: absolute;
@@ -122,4 +131,71 @@ input.search-input {
     position:relative;
     top: 50rem;
     right: 0;
+}
+
+
+.table-inside{
+    position: relative;
+    top:5rem;
+}
+
+
+.custom td{
+    border-top: 3px solid #F1F5F9;
+    font-size: 14px;
+    color: #70706B;
+    font-weight: 400;
+}
+
+.header-table{
+    font-size: 14px;
+    font-weight:400;
+    font-family: 'Roboto1', 'mypteclass', sans-serif;
+}
+
+.custom2{
+    font-size: 14px;
+    color: #70706B;
+    font-weight: 400;
+}
+
+.custom3{
+    font-size: 14px;
+    color: #70706B;
+    font-weight: 400;
+}
+
+.border-0{
+    color:#21376D ;
+    background:none;
+}
+
+
+.table-pagination{
+    font-size: 14px;
+    color: #70706B;
+    font-weight:100;
+    position: absolute;
+    top: 21rem;
+}
+
+.area-pagination{
+    position: relative;
+    top: 9.5rem;
+    display: flex;
+    justify-content: end;
+}
+
+input.search-input {
+    width: 18rem;
+    height: 35px;
+    background-color: #EAECEF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.leaves2{
+    padding:12px;
 }

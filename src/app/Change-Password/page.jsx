@@ -33,7 +33,7 @@ const page = () => {
 
             <div className="grid">
               <div className="row1">
-                <div className="col-md-5 p-0">
+                <div className="col-md-4 p-0">
                   Change Password
 
                   <div className="image">

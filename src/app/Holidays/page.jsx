@@ -21,7 +21,7 @@ const page = () => {
 
             
         <div className="search pt-3 ms-2">
-            <input type="text" placeholder="Search" className="search-input w-50" />
+            <input type="text" placeholder="Search" className="search-input-holiday" />
         </div>
 
         <div className="breadcrumbs">
@@ -31,7 +31,7 @@ const page = () => {
 
         <div className="holiday-line">
             <div className="container-fluid">
-                Holidays
+              <div className="holidays3">Holidays</div>
             </div>
 
             <div className="holidays-corner-image">
@@ -44,18 +44,50 @@ const page = () => {
             </div>
            
 
-           <div className="container-fluid mt-3">
+           <div className="container-fluid mt-3 bg-light" id="tabel-holiday">
           
         <div class="table-responsive">
-            <table class="table table-bordered table-hover">
+            <table class="table  table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Name</th>
+                        <th className="col">Date<svg
+                  className="w-4 h-4 ms-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#fffff"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m8 15 4 4 4-4m0-6-4-4-4 4"
+                  />
+                </svg></th>
+                        <th className="col">Name <svg
+                  className="w-4 h-4 ms-1"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  fill="#fffff"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m8 15 4 4 4-4m0-6-4-4-4 4"
+                  />
+                </svg></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr className="h-col">
                         <td>2024-11-03</td>
                         <td>Bhai duj</td>
                     </tr>
@@ -95,19 +127,9 @@ const page = () => {
             </table>
         </div>
 
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-start">
             <p className="records">Showing 1 - 9 of 9 records</p>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+          
         </div>
    
            </div>

@@ -26,17 +26,17 @@ export default function Home() {
             </div>
 
 
-        <form>
-            <div className="form-group d-flex justify-content-center mt-5">
+        <form className="login-form">
+            <div className="form-group d-flex  mt-5">
                 <input name="user" type="text" class="form-control" placeholder="Username"/>
             </div>
 
-            <div className="form-group d-flex justify-content-center mt-3">
+            <div className="form-group d-flex  mt-3">
                 <input name="password" type="text" class="form-control" placeholder="Password"/>
             </div>
 
-          <div className="ms-5">
-          <Link href="/Dashboard" ><button className="login-btn ms-2"><i class="fa-solid fa-arrow-right me-1"></i>Login</button></Link> 
+          <div className="">
+          <Link href="/Dashboard" ><button className="login-btn"><i class="fa-solid fa-arrow-right me-1"></i>Login</button></Link> 
           </div>
         
         </form>

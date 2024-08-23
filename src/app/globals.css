@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
+  
 }
 
 body{
-  font-family: Roboto1, 'mypteclass', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .background {
@@ -66,6 +70,7 @@ body{
   width: 100%;
   max-width: 350px;
   margin: 0 auto;
+  
 }
 
 .form-group {
@@ -94,6 +99,11 @@ body{
 
 .line {
   color: #555550;
+}
+form.login-form { 
+  margin: 0 auto;
+  max-width: 350px;
+  width: 100%;
 }
 
 
