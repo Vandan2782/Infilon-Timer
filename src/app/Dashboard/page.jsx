@@ -8,6 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 import 'react-quill/dist/quill.snow.css';
+import Navbar from '../Navbar/page'
 
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
@@ -18,7 +19,9 @@ const page = () => {
     <div className='d-flex'>
    
 
-      <Sidebar/>
+      {/* <Sidebar/> */}
+
+      <Navbar/>
 
       {/* </div> */}
      
