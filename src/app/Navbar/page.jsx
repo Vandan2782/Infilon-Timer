@@ -46,7 +46,7 @@ const Page = () => {
         {/* Sidebar */}
         <div
           className={`sidebar  p-3 ${isCollapsed || isMobile ? 'collapsed' : ''}`}
-          style={{ width: isCollapsed ? '0' : '260px', transition: 'width 0.3s ease-in-out' }}
+          style={{ width: isCollapsed ? '0' : '20rem', transition: 'width 0.3s ease-in-out' }}
         >
           <div className="sidebar-header d-flex align-items-center justify-content-between">
             <Image src="/Images/logo.png" width={200} height={50} alt="Logo" className="logo" style={{ opacity: isCollapsed ? 0 : 1, transition: 'opacity 0.3s ease-in-out' }} />

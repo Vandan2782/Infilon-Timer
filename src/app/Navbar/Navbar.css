@@ -2,8 +2,8 @@
     transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
     overflow: hidden;
     /* Ensure no content overflows when collapsed */
-    position: fixed;
-    min-height: 100vh;
+    position:relative;
+    height: 100vh;
     background-color: red;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .card1 {
-    position: absolute;
+    position:absolute;
     top: 615px;
     height: 80px;
     width:100%;
